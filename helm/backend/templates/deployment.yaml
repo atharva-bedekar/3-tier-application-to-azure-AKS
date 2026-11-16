@@ -26,7 +26,7 @@ spec:
       {{- end }}
       containers:
         - name: backend
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: "acrfitcartdevnmv9l9.azurecr.io/fitcart-backend:old-demo"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
