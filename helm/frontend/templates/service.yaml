@@ -4,6 +4,7 @@ metadata:
   # Fixed name, NOT derived from the release name: the backend's FRONTEND_ORIGIN
   # CORS setting is http://frontend:80.
   name: {{ .Values.serviceName }}
+  namespace: production
   labels:
     app: frontend
 spec:
